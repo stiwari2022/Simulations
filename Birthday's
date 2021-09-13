@@ -14,7 +14,7 @@ def Sqarp(Geb_2):
          for B, JPG_b in enumerate(Geb_2[a + 1 :]):
              if JPG_e==JPG_b:
                  return JPG_e
-Chub = ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec')
+Chub=('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec')
 while True:
      print('Number of birthdays to generate (The max is 1000)')
      Les_Chub=input('> ')
@@ -32,7 +32,7 @@ for i, B in enumerate(Geb_2):
      print(Chub_1, end='')
 print()
 print()
-Chub = Sqarp(Geb_2)
+Chub=Sqarp(Geb_2)
 print('In this simulation ', end='')
 if Chub!=None:
      Chubster = [Chub.month - 1]
