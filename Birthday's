@@ -43,7 +43,7 @@ else:
      print('there are no matching birthdays')
 print()
 input('Press enter if you want to calculate the probability of two birthdays that are on the same day')
-print('Now Let\'s run another 1 million simulations')
+print('Now let\'s run another 1 million simulations')
 Chubb=0
 for i in range(1_000_000):
      if i % 10_000==0:
