@@ -11,7 +11,7 @@ def Chub(z):
     y=mylist[0]
     print ("{}: {}\n".format(y, mylist))
   x=0
-  print("\n\nCollatz Conjecture")
+  print ("\n\nCollatz Conjecture")
   print ("The collatz conjecture divides any even number by 2, or multiplies any odd number by 3 then adds 1")
   print ("You'll always end at 1 no matter what number you choose")
   z=int(input("Enter the max number: "))
