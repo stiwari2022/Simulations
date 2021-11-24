@@ -1,0 +1,128 @@
+import random
+import matplotlib.pyplot as plt
+print ("Monte Carlo Simulation")
+Data=[2, -1]
+def Chub(Chubni, Chubster):
+  Chubni=int(input("Enter the number of lines: "))
+  Chubster=int(input("Enter the number of simulations: "))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Jeb=0
+  Big=[]
+  while (Jeb<Chubni):
+    Mere_List=[]
+    Lisp=[]
+    Lispin=[]
+    a=0
+    b=0
+    c=0
+    d=0
+    e=0
+    f=0
+    g=0
+    h=0
+    i=0
+    j=0
+    k=0
+    l=0
+    m=0
+    n=0
+    o=0
+    p=0
+    q=0
+    r=0
+    s=0
+    t=0
+    u=0
+    v=0
+    w=0
+    x=0
+    y=0
+    z=0
+    qa=0
+    Jeb=Jeb+1
+    def Average(AND_and_OR):
+      return sum(AND_and_OR)/len(AND_and_OR)
+    while (q<10000):
+      q=q+1
+      g=random.choice(Data)
+      Lisp.append(g)
+      x=Average(Lisp)
+    a=100+x
+    b=a/100
+    x=100*b
+    Mere_List.append(x)
+    while (z<Chubster-1):
+      while (qa<10000):
+        qa=qa+1
+        ga=random.choice(Data)
+        Lispin.append(ga)
+        xa=Average(Lispin)
+      ya=Data[-1]
+      aa=100+xa
+      ba=aa/100
+      sa=Mere_List[-1]*ba
+      Mere_List.append(sa)
+      z=z+1
+      i=Mere_List[-1]
+    print (Mere_List)
+    plt.plot(Mere_List)
+    Big.append(i)
+  Big_Chub=Average(Big)
+  print ("Average Endpoint:", Big_Chub)
+Chub(0, 0)
