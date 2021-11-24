@@ -92,7 +92,6 @@ def Chub(Chubni, Chubster):
     y=0
     z=0
     Jeb=Jeb+1
-    z=0
     x=random.choice(Data)
     a=100+x
     b=a/100
