@@ -1,7 +1,6 @@
 import random
 import matplotlib.pyplot as plt
 print ("Monte Carlo Simulation")
-Data=[1, -1]
 GitChub=int(input("Enter the number of data sets: "))
 Chubster=int(input("Enter the number of simulations: "))
 Chub_Dot_Com=int(input("Enter the average number of lines in a line: "))
@@ -9,6 +8,7 @@ print ("\n\n")
 def Chub(Chuble, Chubington):
   Chuble=input("Enter this list's name: ")
   Chubington=int(input("Enter this list's size: "))
+
 
 
 
