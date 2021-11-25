@@ -61,7 +61,8 @@ def Chub(Chubni, Chubster):
 
 
 
-
+  def Average(AND_and_OR):
+    return sum(AND_and_OR)/len(AND_and_OR)
   Jeb=0
   Big=[]
   while (Jeb<Chubni):
@@ -100,8 +101,6 @@ def Chub(Chubni, Chubster):
     xa=0
     ya=0
     Jeb=Jeb+1
-    def Average(AND_and_OR):
-      return sum(AND_and_OR)/len(AND_and_OR)
     while (q<10000):
       q=q+1
       g=random.choice(Data)
