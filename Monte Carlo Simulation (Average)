@@ -2,7 +2,7 @@ import random
 import matplotlib.pyplot as plt
 print ("Monte Carlo Simulation")
 Data=[1, -1]
-def Chub(Chubni, Chubster):
+def Chub():
   Chubni=int(input("Enter the number of lines: "))
   Chubster=int(input("Enter the number of simulations: "))
 
@@ -128,4 +128,4 @@ def Chub(Chubni, Chubster):
     Big.append(i)
   Big_Chub=Average(Big)
   print ("Average Endpoint:", Big_Chub)
-Chub(0, 0)
+Chub()
