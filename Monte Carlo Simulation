@@ -2,7 +2,7 @@ import random
 import matplotlib.pyplot as plt
 print ("Monte Carlo Simulation")
 Data=[1, -1]
-def Chub(Chubni, Chubster):
+def Chub():
   Chubni=int(input("Enter the number of lines: "))
   Chubster=int(input("Enter the number of simulations: "))
 
@@ -112,4 +112,4 @@ def Chub(Chubni, Chubster):
       z=z+1
     print (Mere_List)
     plt.plot(Mere_List)
-Chub(0, 0)
+Chub()
