@@ -91,19 +91,24 @@ def Chub(Chubni, Chubster):
     x=0
     y=0
     z=0
+    aa=0
+    xa=0
+    ya=0
+    sa=0
+    xa=0
     Jeb=Jeb+1
     x=random.choice(Data)
     a=100+x
     b=a/100
-    x=100*b
+    x=b
     Mere_List.append(x)
     while (z<Chubster-1):
-      y=Data[-1]
-      x=random.choice(Data)
-      a=100+x
-      b=a/100
-      s=Mere_List[-1]*b
-      Mere_List.append(s)
+      ya=Data[-1]
+      xa=random.choice(Data)
+      aa=100+xa
+      ba=aa/100
+      sa=Mere_List[-1]*ba
+      Mere_List.append(sa)
       z=z+1
     print (Mere_List)
     plt.plot(Mere_List)
