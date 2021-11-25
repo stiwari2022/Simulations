@@ -100,7 +100,7 @@ def Chub(Chubni, Chubster):
     x=random.choice(Data)
     a=100+x
     b=a/100
-    x=b
+    x=100*b
     Mere_List.append(x)
     while (z<Chubster-1):
       ya=Data[-1]
