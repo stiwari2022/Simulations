@@ -108,7 +108,7 @@ def Chub(Chubni, Chubster):
       x=Average(Lisp)
     a=100+x
     b=a/100
-    x=b
+    x=100*b
     Mere_List.append(x)
     while (z<Chubster-1):
       while (qa<10000):
