@@ -67,7 +67,7 @@ def Chub(Chuble, Chubington):
   Lispington=[]
   for ipsum in range(0, Chubington):
     print("Enter number at index {}:".format(ipsum))
-    Num_Chub = int(input())
+    Num_Chub=int(input())
     Lispington.append(Num_Chub)
   print("\nList: {}".format(Lispington))
   def Average(AND_and_OR):
