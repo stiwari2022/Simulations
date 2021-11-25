@@ -7,7 +7,7 @@ Chub_Dot_Com=int(input("Enter the average number of lines in a line: "))
 print ("\n\n")
 def Chub(Chuble, Chubington):
   Chuble=input("Enter this line's name: ")
-  Chubington=int(input("Enter this line's size: "))
+  Chubington=int(input("Enter this list's size: "))
 
 
 
