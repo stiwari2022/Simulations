@@ -1,5 +1,6 @@
 import random
 import matplotlib.pyplot as plt
+fig=plt.figure(figsize=(13, 5))
 print ("Monte Carlo Simulation")
 GitChub=int(input("Enter the number of data sets: "))
 Chubster=int(input("Enter the number of simulations: "))
