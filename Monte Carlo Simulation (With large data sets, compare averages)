@@ -1,5 +1,6 @@
 import random
 import matplotlib.pyplot as plt
+fig=plt.figure(figsize=(13, 5))
 print ("Monte Carlo Simulation")
 One_And_Two=[1, -1]
 Chubster=int(input("Enter the number of simulations for all lists: "))
