@@ -2,10 +2,13 @@ import random
 import matplotlib.pyplot as plt
 fig=plt.figure(figsize=(13, 5))
 print ("Monte Carlo Simulation")
-Data=[1, -1]
+GitChub=int(input("Enter the number of data sets: "))
+Chubster=int(input("Enter the number of simulations: "))
+Chub_Dot_Com=int(input("Enter the average number of lines in a line: "))
+print ("\n\n")
 def Chub():
-  Chubni=int(input("Enter the number of lines: "))
-  Chubster=int(input("Enter the number of simulations: "))
+  Chuble=input("Enter this line's name: ")
+  Chubington=int(input("Enter this list's size: "))
 
 
 
@@ -62,10 +65,17 @@ def Chub():
 
 
 
+  Lispington=[]
+  for ipsum in range(0, Chubington):
+    print("Enter number at index {}:".format(ipsum))
+    Num_Chub=int(input())
+    Lispington.append(Num_Chub)
+  print("\nList: {}".format(Lispington))
   def Average(AND_and_OR):
     return sum(AND_and_OR)/len(AND_and_OR)
-  Jeb=0
   Big=[]
+  Jeb=0
+  Chubni=1
   while (Jeb<Chubni):
     Mere_List=[]
     Lisp=[]
@@ -102,9 +112,9 @@ def Chub():
     xa=0
     ya=0
     Jeb=Jeb+1
-    while (q<10000):
+    while (q<Chub_Dot_Com):
       q=q+1
-      g=random.choice(Data)
+      g=random.choice(Lispington)
       Lisp.append(g)
       x=Average(Lisp)
     a=100+x
@@ -112,12 +122,12 @@ def Chub():
     x=100*b
     Mere_List.append(x)
     while (z<Chubster-1):
-      while (qa<10000):
+      while (qa<Chub_Dot_Com):
         qa=qa+1
-        ga=random.choice(Data)
+        ga=random.choice(Lispington)
         Lispin.append(ga)
         xa=Average(Lispin)
-      ya=Data[-1]
+      ya=Lispington[-1]
       aa=100+xa
       ba=aa/100
       sa=Mere_List[-1]*ba
@@ -125,8 +135,12 @@ def Chub():
       z=z+1
       i=Mere_List[-1]
     print (Mere_List)
-    plt.plot(Mere_List)
+    plt.plot(Mere_List, label=Chuble)
     Big.append(i)
   Big_Chub=Average(Big)
-  print ("Average Endpoint:", Big_Chub)
-Chub()
+  print ("Endpoint: {}\n\n\n".format(Big_Chub))
+Chubing=0
+while (Chubing<GitChub):
+  Chub()
+  Chubing=Chubing+1
+plt.legend()
