@@ -1,0 +1,144 @@
+import random
+import matplotlib.pyplot as plt
+fig=plt.figure(figsize=(13, 5))
+print ("Monte Carlo Simulation")
+
+
+TSMC=[-0.216, 0.126, -0.013, 0.06, 0.04, -0.028, -0.063, 0.07, 0.053, 0.008, 0.078, 0.015, 0.064, -0.013, 0.078, 0.086, -0.011, 0.113, 0.151, 0.076]
+
+
+Chubster=int(input("Enter the number of simulations for all lists: "))
+Chub_Dot_Com=int(input("Enter the average number of lines in a line for all lists: "))
+print("\n")
+def Recency_Bias(Chubstering):
+  keepin=1
+  keep=keepin-1
+  jeep=len(Chubstering)-1
+  yeep=len(Chubstering)
+  weep=0
+  Chubsteringi=[]
+  while (0<=jeep):
+    xeep=Chubstering[jeep]
+    yeep=len(Chubstering)
+    yeep=yeep-weep
+    while (0<yeep+keep):
+      Chubsteringi.append(xeep)
+      yeep=yeep-1
+    jeep=jeep-1
+    weep=weep+1
+  Chubstering.clear()
+  geep=len(Chubsteringi)
+  meep=0
+  while (meep<geep):
+    ceep=Chubsteringi[meep]
+    Chubstering.append(ceep)
+    meep=meep+1
+Recency_Bias(TSMC)
+def Removing_Outliers(Chubstering):
+  def Bubble_Sort(Chubstering):
+    for Chubning in range(len(Chubstering)-1,0,-1):
+      for Lorem_Ipsuming in range(Chubning):
+        if Chubstering[Lorem_Ipsuming]>Chubstering[Lorem_Ipsuming+1]:
+          Chubsterling = Chubstering[Lorem_Ipsuming]
+          Chubstering[Lorem_Ipsuming] = Chubstering[Lorem_Ipsuming+1]
+          Chubstering[Lorem_Ipsuming+1] = Chubsterling
+  def Medianing(Chubstering):
+      Bubble_Sort(Chubstering)
+      feed=len(Chubstering)//2
+      return (Chubstering[feed]+Chubstering[~feed])/2
+  def Standard_Deviation(Chubstering):
+    need=len(Chubstering)
+    meed=Medianing(Chubstering)
+    deed=[(leed-meed)**2 for leed in Chubstering]
+    Variance=sum(deed)/need
+    Dev=Variance**0.5
+    return Dev
+  Median=Medianing(Chubstering)
+  SD=Standard_Deviation(Chubstering)
+  zeed=1
+  xeed=len(Chubstering)
+  beed=Median+SD*2
+  ceed=Median-SD*2
+  deed=Chubstering[0]
+  while (zeed<=xeed):
+    if (zeed==len(Chubstering)):
+      break
+    yeed=Chubstering[zeed-1]
+    if (yeed>beed):
+      Chubstering.remove(yeed)
+    if (yeed<ceed):
+      Chubstering.remove(yeed)
+    zeed=zeed+1
+Removing_Outliers(TSMC)
+def Chub(Chubinson, Data):
+  def Average(AND_and_OR):
+    return sum(AND_and_OR)/len(AND_and_OR)
+  Jeb=0
+  Big=[]
+  Chubni=1
+  while (Jeb<Chubni):
+    Mere_List=[]
+    Lisp=[]
+    Lispin=[]
+    a=0
+    b=0
+    c=0
+    d=0
+    e=0
+    f=0
+    g=0
+    h=0
+    i=0
+    j=0
+    k=0
+    l=0
+    m=0
+    n=0
+    o=0
+    p=0
+    q=0
+    r=0
+    s=0
+    t=0
+    u=0
+    v=0
+    w=0
+    x=0
+    y=0
+    z=0
+    aa=0
+    qa=0
+    sa=0
+    xa=0
+    ya=0
+    Jeb=Jeb+1
+    while (q<Chub_Dot_Com):
+      q=q+1
+      g=random.choice(Data)
+      Lisp.append(g)
+      x=Average(Lisp)
+    a=100+x
+    b=a/100
+    x=100*b
+    Mere_List.append(x)
+    while (z<Chubster-1):
+      while (qa<Chub_Dot_Com):
+        qa=qa+1
+        ga=random.choice(Data)
+        Lispin.append(ga)
+        xa=Average(Lispin)
+      ya=Data[-1]
+      aa=100+xa
+      ba=aa/100
+      sa=Mere_List[-1]*ba
+      Mere_List.append(sa)
+      z=z+1
+      i=Mere_List[-1]
+    print ("{}:".format(Chubinson))
+    print (Mere_List)
+    plt.plot(Mere_List, label=Chubinson)
+    Big.append(i)
+  Big_Chub=Average(Big)
+  print ("Average Endpoint: {}\n\n".format(Big_Chub))
+Chub("TSMC", TSMC)
+plt.legend()
