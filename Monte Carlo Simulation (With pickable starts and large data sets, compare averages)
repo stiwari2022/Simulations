@@ -11,7 +11,7 @@ print ("Monte Carlo Simulation")
 Chubster=int(input("Enter the number of simulations for all lists: "))
 Chub_Dot_Com=int(input("Enter the average number of lines in a line for all lists: "))
 print("\n")
-def Chub(Chubinson, Chubstering, Les_Chub):
+def Chub(Chubingle, Chubstering, Les_Chub):
 
 
 
