@@ -131,9 +131,9 @@ def Chub(Chubinson, Chubstering, Les_Chub):
       Mere_List.append(sa)
       z=z+1
       i=Mere_List[-1]
-    print ("{}:".format(Chubinson))
+    print ("{}:".format(Chubingle))
     print (Mere_List)
-    plt.plot(Mere_List, label=Chubinson)
+    plt.plot(Mere_List, label=Chubingle)
     Big.append(i)
   Big_Chub=Average(Big)
   print ("Average Endpoint: {}\n\n".format(Big_Chub))
