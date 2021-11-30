@@ -11,7 +11,7 @@ print ("Monte Carlo Simulation")
 Chubster=int(input("Enter the number of simulations for all lists: "))
 Chub_Dot_Com=int(input("Enter the average number of lines in a line for all lists: "))
 print("\n")
-def Chub(Chubinson, Data, Les_Chub):
+def Chub(Chubinson, Chubstering, Les_Chub):
 
 
 
@@ -111,7 +111,7 @@ def Chub(Chubinson, Data, Les_Chub):
     Jeb=Jeb+1
     while (q<Chub_Dot_Com):
       q=q+1
-      g=random.choice(Data)
+      g=random.choice(Chubstering)
       Lisp.append(g)
       x=Average(Lisp)
     a=100+x
@@ -121,10 +121,10 @@ def Chub(Chubinson, Data, Les_Chub):
     while (z<Chubster-1):
       while (qa<Chub_Dot_Com):
         qa=qa+1
-        ga=random.choice(Data)
+        ga=random.choice(Chubstering)
         Lispin.append(ga)
         xa=Average(Lispin)
-      ya=Data[-1]
+      ya=Chubstering[-1]
       aa=100+xa
       ba=aa/100
       sa=Mere_List[-1]*ba
