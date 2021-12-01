@@ -1,0 +1,153 @@
+import random
+import matplotlib.pyplot as plt
+fig=plt.figure(figsize=(13, 5))
+print ("Monte Carlo Simulation")
+
+
+Verizon=[-0.053, -0.025, 0.04, -0.082, 0.072, 0.041, -0.061, -0.006, 0.008, 0.031, 0.023, 0.035, 0.088, -0.008, 0.04, -0.002, 0.02, 0.025, -0.012, -0.04]
+AT_And_T=[-0.104, -0.012, -0.004, 0.03, 0.235, 0.031, -0.111, -0.004, 0.013, 0.008, 0.013, -0.007, -0.015, 0.053, 0.058, -0.025, -0.038, 0.085, -0.09, -0.046]
+T_Mobile=[-0.072, 0.14, -0.1, 0.04, -0.06, 0.106, 0.108, 0.03, 0.007, 0.06, 0.25, -0.04]
+
+
+Chubster=int(input("Enter the number of simulations for all lists: "))
+Chub_Dot_Com=int(input("Enter the average number of lines in a line for all lists: "))
+print("\n")
+def Full_Monte_Carlo(Chubingle, Chubstering, Les_Chub):
+  def Recency_Bias(Chubstering):
+    keepin=1
+    keep=keepin-1
+    jeep=len(Chubstering)-1
+    yeep=len(Chubstering)
+    weep=0
+    Chubsteringi=[]
+    while (0<=jeep):
+      xeep=Chubstering[jeep]
+      yeep=len(Chubstering)
+      yeep=yeep-weep
+      while (0<yeep+keep):
+        Chubsteringi.append(xeep)
+        yeep=yeep-1
+      jeep=jeep-1
+      weep=weep+1
+    Chubstering.clear()
+    geep=len(Chubsteringi)
+    meep=0
+    while (meep<geep):
+      ceep=Chubsteringi[meep]
+      Chubstering.append(ceep)
+      meep=meep+1
+  Recency_Bias(Chubstering)
+  def Removing_Outliers(Chubstering):
+    def Bubble_Sort(Chubstering):
+      for Chubning in range(len(Chubstering)-1,0,-1):
+        for Lorem_Ipsuming in range(Chubning):
+          if Chubstering[Lorem_Ipsuming]>Chubstering[Lorem_Ipsuming+1]:
+            Chubsterling = Chubstering[Lorem_Ipsuming]
+            Chubstering[Lorem_Ipsuming] = Chubstering[Lorem_Ipsuming+1]
+            Chubstering[Lorem_Ipsuming+1] = Chubsterling
+    def Medianing(Chubstering):
+        Bubble_Sort(Chubstering)
+        feed=len(Chubstering)//2
+        return (Chubstering[feed]+Chubstering[~feed])/2
+    def Standard_Deviation(Chubstering):
+      need=len(Chubstering)
+      meed=Medianing(Chubstering)
+      deed=[(leed-meed)**2 for leed in Chubstering]
+      Variance=sum(deed)/need
+      Dev=Variance**0.5
+      return Dev
+    Median=Medianing(Chubstering)
+    SD=Standard_Deviation(Chubstering)
+    zeed=0
+    xeed=len(Chubstering)
+    beed=Median+SD*2
+    ceed=Median-SD*2
+    deed=Chubstering[0]
+    meet=len(Chubstering)-1
+    while (zeed<=xeed):
+      if (zeed==len(Chubstering)):
+        break
+      yeed=Chubstering[zeed-meet]
+      if (yeed>beed):
+        Chubstering.remove(yeed)
+      if (yeed<ceed):
+        Chubstering.remove(yeed)
+      zeed=zeed+1
+  Removing_Outliers(Chubstering)
+  def Chub(Chubingle, Chubstering, Les_Chub):
+    def Average(AND_and_OR):
+      return sum(AND_and_OR)/len(AND_and_OR)
+    Jeb=0
+    Big=[]
+    Chubni=1
+    while (Jeb<Chubni):
+      Mere_List=[]
+      Lisp=[]
+      Lispin=[]
+      a=0
+      b=0
+      c=0
+      d=0
+      e=0
+      f=0
+      g=0
+      h=0
+      i=0
+      j=0
+      k=0
+      l=0
+      m=0
+      n=0
+      o=0
+      p=0
+      q=0
+      r=0
+      s=0
+      t=0
+      u=0
+      v=0
+      w=0
+      x=0
+      y=0
+      z=0
+      aa=0
+      qa=0
+      sa=0
+      xa=0
+      ya=0
+      Jeb=Jeb+1
+      while (q<Chub_Dot_Com):
+        q=q+1
+        g=random.choice(Chubstering)
+        Lisp.append(g)
+        x=Average(Lisp)
+      a=100+x
+      b=a/100
+      x=Les_Chub*b
+      Mere_List.append(x)
+      while (z<Chubster-1):
+        while (qa<Chub_Dot_Com):
+          qa=qa+1
+          ga=random.choice(Chubstering)
+          Lispin.append(ga)
+          xa=Average(Lispin)
+        ya=Chubstering[-1]
+        aa=100+xa
+        ba=aa/100
+        sa=Mere_List[-1]*ba
+        Mere_List.append(sa)
+        z=z+1
+        i=Mere_List[-1]
+      print ("{}:".format(Chubingle))
+      print (Mere_List)
+      plt.plot(Mere_List, label=Chubingle)
+      Big.append(i)
+    Big_Chub=Average(Big)
+    print ("Average Endpoint: {}\n\n".format(Big_Chub))
+  Chub(Chubingle, Chubstering, Les_Chub)
+  plt.legend()
+
+
+Full_Monte_Carlo("Verizon", Verizon, 210)
+Full_Monte_Carlo("AT&T", AT_And_T, 172)
+Full_Monte_Carlo("T_Mobile", T_Mobile, 144)
