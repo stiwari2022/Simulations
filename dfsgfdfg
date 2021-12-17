@@ -1,0 +1,89 @@
+b=[]
+Data=open("Apple_Stock_Data.txt")
+Content=Data.read()
+Line=Data.readlines()
+CL=Content.split("\n")
+x=0
+y=len(CL)
+while (x<y):
+	In_Element=CL[x]
+	CLS=In_Element.split()
+	xx=0
+	yy=len(CLS)
+	while (xx<yy):
+		yeet=CLS[xx]
+		CLSS=list(yeet)
+		xxx=0
+		yyy=len(CLSS)
+		while (xxx<yyy):
+			weet=CLSS[xxx]
+			if weet=="D":
+				b.append(x)
+			xxx=xxx+1
+		xx=xx+1
+	x=x+1
+c=len(b)
+d=0
+while (d<c):
+	bd=b[d]
+	v=bd-d
+	m=CL[v]
+	CL.remove(m)
+	d=d+1
+Dset=[]
+for SR in CL:
+	Dsets=SR.replace("\t", " ")
+	Dset.append(Dsets)
+k=0
+l=len(Dset)
+#Data.close
+#Data=open("Apple_Stock_Data.txt", "w")
+while (k<l):
+	#Data.write(Dset[k])
+	k=k+1
+print (Dset)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+164.29	174.56
+159.37	161.84
+161.68	156.81
+150.37	160.55
+151.41	149.99
+0.22 Dividend	
+148.99	151.06
+148.68	149.58
+143.45	148.47
+142.27	144.63
+141.76	142.69
+145.47	142.44
+143.80	146.71
+150.63	145.85
+154.30	148.75
+149.00	154.08
+148.31	148.38
+148.54	147.97
+146.20	148.88
+0.22 Dividend	
+146.36	145.71
+148.27	145.43
+143.75	148.12
+146.21	145.96
+139.96	144.68
+133.41	139.55
+130.30	132.72
+127.82	130.07
+127.21	126.97
