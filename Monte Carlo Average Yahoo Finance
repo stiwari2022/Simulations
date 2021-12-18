@@ -1,0 +1,184 @@
+def Monte_Carlo_Yahoo_Finance(Goggle, Dataing):
+  Googlle=[]
+  def Clean_and_Data_Yahoo_Finance_File(Mere_Nam_Nam, Humhogia):
+    def Clean_and_Data_Yahoo_Finance_File_In_Loop(If_Loop):
+      global Git_Chub
+      Break_And_Continue=[]
+      Data=open(If_Loop)
+      Content=Data.read()
+      Line=Data.readlines()
+      CL=Content.split("\n")
+      x=0
+      y=len(CL)
+      b=[]
+      while (x<y):
+        In_Element=CL[x]
+        CLS=In_Element.split()
+        xx=0
+        yy=len(CLS)
+        while (xx<yy):
+          yeet=CLS[xx]
+          CLSS=list(yeet)
+          xxx=0
+          yyy=len(CLSS)
+          while (xxx<yyy):
+            weet=CLSS[xxx]
+            if weet=="D":
+              b.append(x)
+            xxx=xxx+1
+          xx=xx+1
+        x=x+1
+      c=len(b)
+      d=0
+      while (d<c):
+        bd=b[d]
+        v=bd-d
+        m=CL[v]
+        CL.remove(m)
+        d=d+1
+      Dset=[]
+      for SR in CL:
+        Dsets=SR.replace("\t", " ")
+        Dset.append(Dsets)
+      k=0
+      l=len(Dset)
+      le=l-1
+      Index=0
+      Inidex=len(Dset)
+      GitChub=[]
+      while (Index<Inidex):
+        L=[]
+        Itdex=0
+        Goat=Dset[Index]
+        Goating=Goat.split()
+        l_Goating=len(Goating)
+        while (Itdex<l_Goating):
+          L_Goating=Goating[Itdex]
+          Lu_Goating=float(L_Goating)
+          L.append(Lu_Goating)
+          Itdex=Itdex+1
+        a=L[0]
+        b=L[1]
+        c=(b/a)-1
+        d=c*100
+        GitChub.append(d)
+        Index=Index+1
+    Clean_and_Data_Yahoo_Finance_File_In_Loop(Humhogia)
+    def Translate_Git_Chub_to_Var(Break_And_Continue):
+      Git_Var=0
+      Git_Chub_Len=len(GitChub)
+      while (Git_Var<Git_Chub_Len):
+        Git_Chub_Goat=GitChub[Git_Var]
+        Break_And_Continue.append(Git_Chub_Goat)
+        Git_Var=Git_Var+1
+    Translate_Git_Chub_to_Var(Mere_Nam_Nam)
+  Clean_and_Data_Yahoo_Finance_File(Googlle, Dataing)
+  def Removing_Outliers(Chubstering):
+    def Medianing(Chubstering):
+        feed=len(Chubstering)//2
+        return (Chubstering[feed]+Chubstering[~feed])/2
+    def IQR_Standard_Deviation(Chubstering):
+      need=len(Chubstering)
+      meed=Medianing(Chubstering)
+      deed=[(leed-meed)**2 for leed in Chubstering]
+      Variance=sum(deed)/need
+      iDev=Variance**0.5
+      return iDev
+    Median=Medianing(Chubstering)
+    iSD=IQR_Standard_Deviation(Chubstering)
+    zeed=0
+    xeed=len(Chubstering)
+    beed=Median+iSD*2
+    ceed=Median-iSD*2
+    meep=len(Chubstering)-1
+    while (zeed<=xeed):
+      if (zeed==len(Chubstering)):
+        break
+      yeed=Chubstering[zeed-meep]
+      if (yeed>beed):
+        Chubstering.remove(yeed)
+      if (yeed<ceed):
+        Chubstering.remove(yeed)
+      zeed=zeed+1
+  Removing_Outliers(Googlle)
+  import random
+  import matplotlib.pyplot as plt
+  fig=plt.figure(figsize=(13, 5))
+  print ("Monte Carlo Simulation")
+  One_And_Two=[1, -1]
+  Chubster=int(input("Enter the number of simulations for all lists: "))
+  Chub_Dot_Com=int(input("Enter the average number of lines in a line for all lists: "))
+  print("\n")
+  def Chub(Chubinson, Data):
+    def Average(AND_and_OR):
+      return sum(AND_and_OR)/len(AND_and_OR)
+    Jeb=0
+    Big=[]
+    Chubni=1
+    while (Jeb<Chubni):
+      Mere_List=[]
+      Lisp=[]
+      Lispin=[]
+      a=0
+      b=0
+      c=0
+      d=0
+      e=0
+      f=0
+      g=0
+      h=0
+      i=0
+      j=0
+      k=0
+      l=0
+      m=0
+      n=0
+      o=0
+      p=0
+      q=0
+      r=0
+      s=0
+      t=0
+      u=0
+      v=0
+      w=0
+      x=0
+      y=0
+      z=0
+      aa=0
+      qa=0
+      sa=0
+      xa=0
+      ya=0
+      Jeb=Jeb+1
+      while (q<Chub_Dot_Com):
+        q=q+1
+        g=random.choice(Data)
+        Lisp.append(g)
+        x=Average(Lisp)
+      a=100+x
+      b=a/100
+      x=100*b
+      Mere_List.append(x)
+      while (z<Chubster-1):
+        while (qa<Chub_Dot_Com):
+          qa=qa+1
+          ga=random.choice(Data)
+          Lispin.append(ga)
+          xa=Average(Lispin)
+        ya=Data[-1]
+        aa=100+xa
+        ba=aa/100
+        sa=Mere_List[-1]*ba
+        Mere_List.append(sa)
+        z=z+1
+        i=Mere_List[-1]
+      print ("{}:".format(Chubinson))
+      print (Mere_List)
+      plt.plot(Mere_List, label=Chubinson)
+      Big.append(i)
+    Big_Chub=Average(Big)
+    print ("Average Endpoint: {}\n\n".format(Big_Chub))
+  Chub(Goggle, Googlle)
+Monte_Carlo_Yahoo_Finance("Apple", "Apple_Stock_Data.txt")
+plt.legend()
