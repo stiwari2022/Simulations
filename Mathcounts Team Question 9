@@ -15,6 +15,9 @@ while (C<100000):
             if ODS[-1]==1 and ODS[-2]==1 and ODS[-3]==1:
                 n=1
                 Big_List.append(len(ODS))
+            if ODS[-1]==0 and ODS[-2]==0 and ODS[-3]==0:
+                n=1
+                Big_List.append(len(ODS))
     C=C+1
 while (C_1<len(Big_List)):
     z=Big_List[C_1]
