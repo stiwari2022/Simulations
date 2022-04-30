@@ -1,28 +1,42 @@
 import random
-DS=[0, 1]
-C=0
+
+
+Simulations=500000
+Consecutive_Flips=3
+Number_More_Than_To_Achieve_Goal=9
+
+
+Data=[1, 2]
+Tally=[]
 C_1=0
-CC=0
-Big_List=[]
-while (C<100000):
-    ODS=[]
-    n=0
-    while (n==0):
-        x=random.choice(DS)
-        ODS.append(x)
-        if len(ODS)>2:
-            Checker=[]
-            if ODS[-1]==1 and ODS[-2]==1 and ODS[-3]==1:
-                n=1
-                Big_List.append(len(ODS))
-            if ODS[-1]==0 and ODS[-2]==0 and ODS[-3]==0:
-                n=1
-                Big_List.append(len(ODS))
-    C=C+1
-while (C_1<len(Big_List)):
-    z=Big_List[C_1]
-    if z>10:
-        CC=CC+1
-    C_1=C_1+1
-E=CC/len(Big_List)
-print (E)
+while (C_1<Simulations):
+  Len=0
+  n=0
+  Records=[]
+  while (n==0):
+    Len=Len+1
+    Choice=random.choice(Data)
+    Records.append(Choice)
+    if (Len>Consecutive_Flips-1):
+      Testing=[]
+      def Collect_Last_Values(List, Test, Last):
+        C_1=0
+        C_2=0
+        while (C_1<Last):
+          C_2=C_2-1
+          Test.append(List[C_2])
+          C_1=C_1+1
+      Collect_Last_Values(Records, Testing, Consecutive_Flips)
+      if len(set(Testing))==1:
+        Tally.append(Len)
+        n=1
+  C_1=C_1+1
+LTally=len(Tally)
+C_2=0
+Over=0
+while (C_2<LTally):
+  if (Tally[C_2]>Number_More_Than_To_Achieve_Goal):
+    Over=Over+1
+  C_2=C_2+1
+Percentage=(Over/LTally)*100
+print (f"{Percentage}%")
