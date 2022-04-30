@@ -1,6 +1,9 @@
 import random
 
 
+# John had a coin with sides heads and tails. He flips the coin until he gets 3 heads, or 3 tails in a row. What is the probability that it'll take him more than 10 flips to achieve his goal?
+
+
 Simulations=500000
 Consecutive_Flips=3
 Number_More_Than_To_Achieve_Goal=9
